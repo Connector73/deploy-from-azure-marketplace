@@ -68,8 +68,8 @@
     },
     "variables": {
         "publisher": "xyzrd-group-ou",
-        "offer": "c73-13-0-5-z-preview",
-        "sku": "c73-14-0-4-n",
+        "offer": "c73-zultys-mxvirtual",
+        "sku": "c73-14-0-4",
         "version": "latest"
 
     },
