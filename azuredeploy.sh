@@ -6,6 +6,8 @@ az login
 LOCATION="WestEurope"
 RESGROUPNAME="from-market-resgroup"
 
+TEMPLATEFILE="template.json"
+
 # Marketplace offer details
 PUBLISHER="xyzrd-group-ou"
 OFFER="c73-zultys-mxvirtual"
@@ -29,7 +31,7 @@ startime=`date +%H:%M:%S`
 az group deployment create \
     --name "MXV-deployment" \
     --resource-group "$RESGROUPNAME" \
-    --template-file template.json \
+    --template-file $TEMPLATEFILE \
     --parameters \
                 location="$LOCATION" \
                 publisher="$PUBLISHER" \
