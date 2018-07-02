@@ -7,7 +7,7 @@ LOCATION="WestEurope"
 RESGROUPNAME="from-market-resgroup"
 
 # Select subscription name
-SUBSCRIPTION="Production"
+SUBSCRIPTION="Visual Studio Professional"
 
 az account set -s "$SUBSCRIPTION"
 
