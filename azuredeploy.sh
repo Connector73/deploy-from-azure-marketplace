@@ -4,7 +4,7 @@
 az login
 
 LOCATION="WestEurope"
-RESGROUPNAME="from-market3"
+RESGROUPNAME="from-market-resgroup"
 
 # Select subscription name
 SUBSCRIPTION="Production"
@@ -13,7 +13,7 @@ az account set -s $SUBSCRIPTION
 
 # create resource group
 echo "Creating resource group..."
-az group create -l $LOCATION -n $RESGROUPNAME
+az group create -l $LOCATION -n "$RESGROUPNAME"
 
 
 # deploy VM
