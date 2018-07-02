@@ -9,7 +9,7 @@ RESGROUPNAME="from-market-resgroup"
 # Select subscription name
 SUBSCRIPTION="Production"
 
-az account set -s $SUBSCRIPTION
+az account set -s "$SUBSCRIPTION"
 
 # create resource group
 echo "Creating resource group..."
