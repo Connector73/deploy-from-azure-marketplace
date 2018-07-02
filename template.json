@@ -64,15 +64,21 @@
         "securityRules_mxv_udp_name": {
             "defaultValue": "mxv-udp",
             "type": "string"
+        },
+        "publisher": {
+            "type": "string"
+        },
+        "offer": {
+            "type": "string"
+        },
+        "sku":{
+            "type": "string"
+        },
+        "version": {
+            "type": "string"
         }
     },
-    "variables": {
-        "publisher": "xyzrd-group-ou",
-        "offer": "c73-zultys-mxvirtual",
-        "sku": "c73-14-0-4",
-        "version": "latest"
-
-    },
+    "variables": {},
     "resources": [
         {
             "type": "Microsoft.Network/networkInterfaces",
@@ -485,9 +491,9 @@
             "location": "[parameters('location')]",
             "scale": null,
             "plan": {
-                "publisher": "[variables('publisher')]",
-                "name": "[variables('sku')]",
-                "product": "[variables('offer')]"
+                "publisher": "[parameters('publisher')]",
+                "name": "[parameters('sku')]",
+                "product": "[parameters('offer')]"
                 },
             "properties": {
                 "hardwareProfile": {
@@ -500,10 +506,10 @@
                 },
                 "storageProfile": {
                     "imageReference": {
-                        "publisher": "[variables('publisher')]",
-                        "offer": "[variables('offer')]",
-                        "sku": "[variables('sku')]",
-                        "version": "[variables('version')]"
+                        "publisher": "[parameters('publisher')]",
+                        "offer": "[parameters('offer')]",
+                        "sku": "[parameters('sku')]",
+                        "version": "[parameters('version')]"
                     },
                     "osDisk": {
                         "osType": "[parameters('osType')]",
