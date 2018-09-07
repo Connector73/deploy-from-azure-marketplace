@@ -1,5 +1,5 @@
 $resourceGroupName="from-market-testing"
-$subscriptionId="Visual Studio Professional"
+$subscriptionId="My Azure Subscription"
 $resourceGroupLocation="West Europe"
 
 $templateFile="template.json"
